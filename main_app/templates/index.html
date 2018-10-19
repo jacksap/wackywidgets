@@ -15,15 +15,15 @@
 <body>
     <h1>Wacky Widgets</h1>
     <div>
-        {% if widget in widgets == 0 %}
+        {% if widgets|length == 0 %}
         <h3>No Widgets Exist</h3>
         <hr>
         {% else %}
             <table class="pure-table pure-table-striped">
             <tr>
-                <th>Description</th>
-                <th>Quantity</th>
-                <th>Delete</th>
+                <td>Description</td>
+                <td>Quantity</td>
+                <td>Delete</td>
             </tr>
             {% for widget in widgets %}
             <tr>
